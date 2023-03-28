@@ -1,0 +1,106 @@
+<block>
+
+<instr><opcode>172</opcode><srcs><operand>32</operand><operand>156</operand></srcs><dsts></dsts></instr>
+<instr><opcode>165</opcode><srcs><operand>17</operand><operand>17</operand></srcs><dsts><operand>17</operand></dsts></instr>
+<instr><opcode>213</opcode><srcs><operand><mem><base>4</base><disp>156</disp></mem></operand></srcs><dsts><operand>8</operand></dsts></instr>
+<instr><opcode>213</opcode><srcs><operand><mem><base>2</base><disp>156</disp></mem></operand></srcs><dsts><operand>1</operand></dsts></instr>
+
+<block><instr><opcode>353</opcode><srcs><operand><mem><base>4</base><disp>156</disp></mem></operand></srcs><dsts><operand>17</operand></dsts></instr>
+        <instr><opcode>166</opcode><srcs><operand>156</operand><operand>53</operand></srcs><dsts><operand>53</operand></dsts></instr>
+        <instr><opcode>172</opcode><srcs><operand>17</operand><operand>156</operand></srcs><dsts></dsts></instr>
+        <instr><opcode>330</opcode><srcs></srcs><dsts><operand>49</operand></dsts></instr>
+        <instr><opcode>353</opcode><srcs><operand>49</operand></srcs><dsts><operand>17</operand></dsts></instr>
+        <instr><opcode>219</opcode><srcs><operand><mem><base>1</base><index>1</index></mem></operand></srcs><dsts><operand>3</operand></dsts></instr>
+        <instr><opcode>162</opcode><srcs><operand>3</operand><operand>1</operand></srcs><dsts><operand>1</operand></dsts></instr>
+        <instr><opcode>415</opcode><srcs><operand>156</operand><operand>1</operand></srcs><dsts><operand>1</operand></dsts></instr>
+        <instr><opcode>168</opcode><srcs><operand>1</operand><operand>6</operand></srcs><dsts><operand>6</operand></dsts></instr>
+        <instr><opcode>213</opcode><srcs><operand><mem><base>6</base></mem></operand></srcs><dsts><operand>1</operand></dsts></instr>
+        <instr><opcode>162</opcode><srcs><operand>156</operand><operand>5</operand></srcs><dsts><operand>5</operand></dsts></instr>
+        <instr><opcode>178</opcode><srcs><operand>5</operand><operand><mem><base>5</base></mem></operand></srcs><dsts><operand>4</operand><operand>5</operand></dsts></instr>
+        <instr><opcode>178</opcode><srcs><operand>5</operand><operand><mem><base>5</base></mem></operand></srcs><dsts><operand>6</operand><operand>5</operand></dsts></instr>
+        <instr><opcode>178</opcode><srcs><operand>5</operand><operand><mem><base>5</base></mem></operand></srcs><dsts><operand>13</operand><operand>5</operand></dsts></instr>
+        <instr><opcode>178</opcode><srcs><operand>5</operand><operand><mem><base>5</base></mem></operand></srcs><dsts><operand>14</operand><operand>5</operand></dsts></instr>
+        <instr><opcode>178</opcode><srcs><operand>5</operand><operand><mem><base>5</base></mem></operand></srcs><dsts><operand>15</operand><operand>5</operand></dsts></instr>
+        <instr><opcode>178</opcode><srcs><operand>5</operand><operand><mem><base>5</base></mem></operand></srcs><dsts><operand>16</operand><operand>5</operand></dsts></instr>
+</block>
+
+<block><instr><opcode>176</opcode><srcs><operand>6</operand><operand>5</operand></srcs><dsts><operand>5</operand><operand><mem><base>5</base><disp>156</disp></mem></operand></dsts></instr> #pushq	%rbp;
+        <instr><opcode>214</opcode><srcs><operand>5</operand></srcs><dsts><operand>6</operand></dsts></instr>movq	%rsp, %rbp;
+        <instr><opcode>176</opcode><srcs><operand>16</operand><operand>5</operand></srcs><dsts><operand>5</operand><operand><mem><base>5</base><disp>156</disp></mem></operand></dsts></instr>pushq	%r15;
+        <instr><opcode>176</opcode><srcs><operand>15</operand><operand>5</operand></srcs><dsts><operand>5</operand><operand><mem><base>5</base><disp>156</disp></mem></operand></dsts></instr>pushq	%r14;
+        <instr><opcode>176</opcode><srcs><operand>14</operand><operand>5</operand></srcs><dsts><operand>5</operand><operand><mem><base>5</base><disp>156</disp></mem></operand></dsts></instr>pushq	%r13;
+        <instr><opcode>176</opcode><srcs><operand>13</operand><operand>5</operand></srcs><dsts><operand>5</operand><operand><mem><base>5</base><disp>156</disp></mem></operand></dsts></instr>pushq	%r12;
+        <instr><opcode>214</opcode><srcs><operand>8</operand></srcs><dsts><operand>13</operand></dsts></instr>movq	%rdi, %r12;
+        <instr><opcode>176</opcode><srcs><operand>4</operand><operand>5</operand></srcs><dsts><operand>5</operand><operand><mem><base>5</base><disp>156</disp></mem></operand></dsts></instr>pushq	%rbx;
+        <instr><opcode>214</opcode><srcs><operand>7</operand></srcs><dsts><operand>8</operand></dsts></instr>movq	%rsi, %rdi;
+        <instr><opcode>214</opcode><srcs><operand>7</operand></srcs><dsts><operand>4</operand></dsts></instr>movq	%rsi, %rbx;
+        <instr><opcode>219</opcode><srcs><operand><mem><base>6</base><disp>156</disp></mem></operand></srcs><dsts><operand>15</operand></dsts></instr>leaq	-1312(%rbp), %r14;
+        <instr><opcode>168</opcode><srcs><operand>156</operand><operand>5</operand></srcs><dsts><operand>5</operand></dsts></instr>subq	$1672, %rsp;
+        <instr><opcode>213</opcode><srcs><operand><mem><disp>156</disp></mem></operand></srcs><dsts><operand>1</operand></dsts></instr>movq	%fs:40, %rax;
+        <instr><opcode>214</opcode><srcs><operand>1</operand></srcs><dsts><operand><mem><base>6</base><disp>156</disp></mem></operand></dsts></instr>movq	%rax, -56(%rbp);
+        <instr><opcode>170</opcode><srcs><operand>17</operand><operand>17</operand></srcs><dsts><operand>17</operand></dsts></instr>xorl	%eax, %eax
+</block>
+
+
+<block><instr><opcode>183</opcode><srcs><operand>17</operand><operand>24</operand></srcs><dsts><operand>24</operand></dsts></instr>imull	%eax, %edi;
+        <instr><opcode>214</opcode><srcs><operand>6</operand></srcs><dsts><operand>7</operand></dsts></instr>movq	%rbp, %rsi;
+        <instr><opcode>162</opcode><srcs><operand>156</operand><operand>24</operand></srcs><dsts><operand>24</operand></dsts></instr>addl	$31, %edi
+</block>
+
+
+<block><instr><opcode>213</opcode><srcs><operand><mem><base>5</base><disp>156</disp></mem></operand></srcs><dsts><operand>2</operand></dsts></instr>movq	144(%rsp), %rcx;
+        <instr><opcode>215</opcode><srcs><operand>156</operand></srcs><dsts><operand>29</operand></dsts></instr>movl	$1, %r12d;
+        <instr><opcode>214</opcode><srcs><operand>156</operand></srcs><dsts><operand><mem><base>2</base><index>3</index></mem></operand></dsts></instr>movq	$0, (%rcx,%rdx);
+        <instr><opcode>162</opcode><srcs><operand>156</operand><operand>3</operand></srcs><dsts><operand>3</operand></dsts></instr>addq	$8, %rdx;
+        <instr><opcode>172</opcode><srcs><operand>3</operand><operand>1</operand></srcs><dsts></dsts></instr>cmpq	%rax, %rdx
+</block>
+
+
+<block><instr><opcode>162</opcode><srcs><operand>156</operand><operand><mem><base>13</base></mem></operand></srcs><dsts><operand><mem><base>13</base></mem></operand></dsts></instr>addq	$1, (%r12);
+        <instr><opcode>219</opcode><srcs><operand><mem><base>6</base><disp>156</disp></mem></operand></srcs><dsts><operand>3</operand></dsts></instr>leaq	-144(%rbp), %rdx;
+        <instr><opcode>219</opcode><srcs><operand><mem><base>6</base><disp>156</disp></mem></operand></srcs><dsts><operand>7</operand></dsts></instr>leaq	-112(%rbp), %rsi;
+        <instr><opcode>218</opcode><srcs><operand>31</operand><operand>31</operand></srcs><dsts></dsts></instr>testl	%r14d, %r14d;
+        <instr><opcode>214</opcode><srcs><operand>16</operand></srcs><dsts><operand>8</operand></dsts></instr>movq	%r15, %rdi;
+        <instr><opcode>214</opcode><srcs><operand>13</operand></srcs><dsts><operand><mem><base>6</base><disp>156</disp></mem></operand></dsts></instr>movq	%r12, -112(%rbp);
+        <instr><opcode>331</opcode><srcs></srcs><dsts><operand><mem><base>6</base><disp>156</disp></mem></operand></dsts></instr>setne	-104(%rbp);
+        <instr><opcode>214</opcode><srcs><operand>16</operand></srcs><dsts><operand><mem><base>6</base><disp>156</disp></mem></operand></dsts></instr>movq	%r15, -144(%rbp)
+</block>
+
+<block><instr><opcode>172</opcode><srcs><operand><mem><base>13</base><disp>156</disp></mem></operand><operand>156</operand></srcs><dsts></dsts></instr></block> 41807c241900 cmpb	$0, 25(%r12)
+
+
+<block><instr><opcode>219</opcode><srcs><operand><mem><base>6</base><disp>156</disp></mem></operand></srcs><dsts><operand>17</operand></dsts></instr>leal	63(%rbp), %eax;
+        <instr><opcode>219</opcode><srcs><operand><mem><base>13</base><index>13</index></mem></operand></srcs><dsts><operand>14</operand></dsts></instr>leaq	(%r12,%r12), %r13;
+        <instr><opcode>416</opcode><srcs><operand>156</operand><operand>17</operand></srcs><dsts><operand>17</operand></dsts></instr>shrl	$6, %eax;
+        <instr><opcode>172</opcode><srcs><operand>14</operand><operand>1</operand></srcs><dsts></dsts></instr>cmpq	%rax, %r13;
+        <instr><opcode>270</opcode><srcs><operand>1</operand></srcs><dsts><operand>14</operand></dsts></instr>cmovbq	%rax, %r13;
+        <instr><opcode>213</opcode><srcs><operand><mem><base>5</base><disp>156</disp></mem></operand></srcs><dsts><operand>1</operand></dsts></instr>movq	24(%rsp), %rax;
+        <instr><opcode>219</opcode><srcs><operand><mem><index>14</index></mem></operand></srcs><dsts><operand>7</operand></dsts></instr>leaq	(,%r13,8), %rsi;
+        <instr><opcode>213</opcode><srcs><operand><mem><base>1</base><disp>156</disp></mem></operand></srcs><dsts><operand>8</operand></dsts></instr>movq	144(%rax), %rdi
+</block>
+
+
+<block><instr><opcode>162</opcode><srcs><operand>156</operand><operand>25</operand></srcs><dsts><operand>25</operand></dsts></instr>addl	$1, %r8d;
+        <instr><opcode>214</opcode><srcs><operand>25</operand></srcs><dsts><operand><mem><base>6</base><disp>156</disp></mem></operand></dsts></instr>movl	%r8d, 164(%rbp)
+        <instr><opcode>214</opcode><srcs><operand>7</operand></srcs><dsts><operand><mem><base>2</base></mem></operand></dsts></instr>;movq	%rsi, (%rcx);
+        <instr><opcode>213</opcode><srcs><operand><mem><base>6</base><disp>156</disp></mem></operand></srcs><dsts><operand>2</operand></dsts></instr>movq	144(%rbp), %rcx;
+        <instr><opcode>219</opcode><srcs><operand><mem><base>2</base><index>10</index></mem></operand></srcs><dsts><operand>1</operand></dsts></instr>leaq	(%rcx,%r9), %rax
+</block>
+
+
+<block><instr><opcode>353</opcode><srcs><operand><mem><base>4</base><disp>156</disp></mem></operand></srcs><dsts><operand>17</operand></dsts></instr>
+        <instr><opcode>213</opcode><srcs><operand><mem><base>5</base><disp>156</disp></mem></operand></srcs><dsts><operand>2</operand></dsts></instr>
+        <instr><opcode>214</opcode><srcs><operand>16</operand></srcs><dsts><operand>8</operand></dsts></instr>movzbl	1(%rbx), %eax;
+        <instr><opcode>219</opcode><srcs><operand><mem><base>16</base><disp>156</disp></mem></operand></srcs><dsts><operand>14</operand></dsts></instr>movq	16(%rsp), %rcx;
+        <instr><opcode>214</opcode><srcs><operand>17</operand></srcs><dsts><operand>19</operand></dsts></instr>leaq	616(%r15), %r13;
+        <instr><opcode>416</opcode><srcs><operand>156</operand><operand>49</operand></srcs><dsts><operand>49</operand></dsts></instr>movl	%eax, %edx;
+        <instr><opcode>416</opcode><srcs><operand>156</operand><operand>51</operand></srcs><dsts><operand>51</operand></dsts></instr>shrb	$2, %al;
+        <instr><opcode>166</opcode><srcs><operand>156</operand><operand>17</operand></srcs><dsts><operand>17</operand></dsts></instr>shrb	%dl;
+        <instr><opcode>166</opcode><srcs><operand>156</operand><operand>19</operand></srcs><dsts><operand>19</operand></dsts></instr>andl	$1, %eax;
+        <instr><opcode>162</opcode><srcs><operand>19</operand><operand>17</operand></srcs><dsts><operand>17</operand></dsts></instr>andl	$1, %edx;
+        <instr><opcode>170</opcode><srcs><operand>19</operand><operand>19</operand></srcs><dsts><operand>19</operand></dsts></instr>addl	%edx, %eax;
+        <instr><opcode>221</opcode><srcs><operand>33</operand></srcs><dsts><operand>1</operand></dsts></instr>xorl	%edx, %edx;cltq;
+        <instr><opcode>213</opcode><srcs><operand><mem><base>2</base><index>1</index></mem></operand></srcs><dsts><operand>7</operand></dsts></instr>movq	(%rcx,%rax,8), %rsi
+</block>
+
+</block>
