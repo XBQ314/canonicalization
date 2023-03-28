@@ -290,7 +290,9 @@ def AnalyzeAsm(asm_code, asm_flags):
             dsts_mem_base=False
             dsts_mem_disp=False
             dsts_mem_index=False
-        else: assert(0)
+        else: 
+            print(" ".join(asm_code)+'\t'+"|".join(asm_flags)+'\n')
+            assert(0)
         asm_xml_str = \
         GenerateXMLforASM(srcs_num=srcs_num, srcs_mem_flag=srcs_mem_flag, srcs_mem_idx=srcs_mem_idx, srcs_mem_base=srcs_mem_base, srcs_mem_disp=srcs_mem_disp, srcs_mem_index=srcs_mem_index,
                         dsts_num=dsts_num, dsts_mem_flag=dsts_mem_flag, dsts_mem_idx=dsts_mem_idx, dsts_mem_base=dsts_mem_base, dsts_mem_disp=dsts_mem_disp, dsts_mem_index=dsts_mem_index)
@@ -376,8 +378,9 @@ if __name__ == "__main__":
     os.remove(r'test.txt')
     os.remove(r'test2.txt')
 
-
-    ReadLog("log.txt")
-    print("total_insts:{}, total_insts:{}, num_of_loadstore:{}, num_of_branch:{}, num_of_len1{}, ratio:{}".\
-          format(total_insts, num_of_integer, num_of_loadstore, num_of_branch, num_of_len1, \
-                 (num_of_integer+num_of_loadstore+num_of_branch+num_of_len1)/total_insts))
+    for i in range(25):
+        ReadLog("new"+str.format('{:02d}', i))
+        # ReadLog("log.txt")
+        print("total_insts:{}, total_insts:{}, num_of_loadstore:{}, num_of_branch:{}, num_of_len1{}, ratio:{}".\
+            format(total_insts, num_of_integer, num_of_loadstore, num_of_branch, num_of_len1, \
+                    (num_of_integer+num_of_loadstore+num_of_branch+num_of_len1)/total_insts))
