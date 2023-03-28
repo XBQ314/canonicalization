@@ -344,10 +344,9 @@ def ReadLog(fileName):
                     # print(hex, end="")
                 if lineID % 2 == 1: # 奇数行 exec
                     exec_line = line
-                    exec_tickt = re.match("\s*\d+", exec_line).group(0)
-                    assert(decode_tick == exec_tickt)
-
                     exec_parts = exec_line.split(":")
+                    exec_tickt = exec_parts[0]
+                    assert(decode_tick == exec_tickt)
                     assert(len(exec_parts) == 7)
 
                     asm_code = exec_parts[4]
