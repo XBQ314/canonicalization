@@ -336,8 +336,11 @@ def ReadLog(fileName):
             if lineID <= 20000:
                 if lineID % 2 == 0: # 偶数行 decode
                     decode_line = line
-                    decode_tick = re.match("\s*\d+", decode_line).group(0) # 在开头匹配tick数
-                    hex = re.search("0x[0-9a-z]{8}", decode_line).group(0) # 匹配decode line中的编码hex形式
+                    decode_parts = decode_line.split(':')
+                    decode_tick = decode_parts[0]
+                    hex = decode_parts[4]
+                    # decode_tick = re.match("\s*\d+", decode_line).group(0) # 在开头匹配tick数
+                    # hex = re.search("0x[0-9a-z]{8}", decode_line).group(0) # 匹配decode line中的编码hex形式
                     # print(hex, end="")
                 if lineID % 2 == 1: # 奇数行 exec
                     exec_line = line
